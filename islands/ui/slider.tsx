@@ -1,4 +1,4 @@
-import React from "preact/compat"
+import { useMemo } from "preact/hooks";
 import { Slider as SliderPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils.ts"
@@ -10,8 +10,8 @@ function Slider({
   min = 0,
   max = 100,
   ...props
-}: React.ComponentProps<typeof SliderPrimitive.Root>) {
-  const _values = React.useMemo(
+}: preact.ComponentProps<typeof SliderPrimitive.Root>) {
+  const _values = useMemo(
     () =>
       Array.isArray(value)
         ? value

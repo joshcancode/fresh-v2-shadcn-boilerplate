@@ -1,4 +1,3 @@
-import React from "preact/compat"
 import { Tabs as TabsPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils.ts"
@@ -6,7 +5,7 @@ import { cn } from "@/lib/utils.ts"
 function Tabs({
   className,
   ...props
-}: React.ComponentProps<typeof TabsPrimitive.Root>) {
+}: preact.ComponentProps<typeof TabsPrimitive.Root>) {
   return (
     <TabsPrimitive.Root
       data-slot="tabs"
@@ -19,7 +18,7 @@ function Tabs({
 function TabsList({
   className,
   ...props
-}: React.ComponentProps<typeof TabsPrimitive.List>) {
+}: preact.ComponentProps<typeof TabsPrimitive.List>) {
   return (
     <TabsPrimitive.List
       data-slot="tabs-list"
@@ -35,7 +34,7 @@ function TabsList({
 function TabsTrigger({
   className,
   ...props
-}: React.ComponentProps<typeof TabsPrimitive.Trigger>) {
+}: preact.ComponentProps<typeof TabsPrimitive.Trigger>) {
   return (
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
@@ -51,7 +50,7 @@ function TabsTrigger({
 function TabsContent({
   className,
   ...props
-}: React.ComponentProps<typeof TabsPrimitive.Content>) {
+}: preact.ComponentProps<typeof TabsPrimitive.Content>) {
   return (
     <TabsPrimitive.Content
       data-slot="tabs-content"

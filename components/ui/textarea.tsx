@@ -1,8 +1,6 @@
-import React from "preact/compat"
-
 import { cn } from "@/lib/utils.ts"
 
-function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
+function Textarea({ className, ...props }: preact.ComponentProps<"textarea">) {
   return (
     <textarea
       data-slot="textarea"

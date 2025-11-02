@@ -1,35 +1,34 @@
-import React from "preact/compat"
 import { Dialog as SheetPrimitive } from "radix-ui"
 import { XIcon } from "lucide-preact"
 
 import { cn } from "@/lib/utils.ts"
 
-function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
+function Sheet({ ...props }: preact.ComponentProps<typeof SheetPrimitive.Root>) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />
 }
 
 function SheetTrigger({
   ...props
-}: React.ComponentProps<typeof SheetPrimitive.Trigger>) {
+}: preact.ComponentProps<typeof SheetPrimitive.Trigger>) {
   return <SheetPrimitive.Trigger data-slot="sheet-trigger" {...props} />
 }
 
 function SheetClose({
   ...props
-}: React.ComponentProps<typeof SheetPrimitive.Close>) {
+}: preact.ComponentProps<typeof SheetPrimitive.Close>) {
   return <SheetPrimitive.Close data-slot="sheet-close" {...props} />
 }
 
 function SheetPortal({
   ...props
-}: React.ComponentProps<typeof SheetPrimitive.Portal>) {
+}: preact.ComponentProps<typeof SheetPrimitive.Portal>) {
   return <SheetPrimitive.Portal data-slot="sheet-portal" {...props} />
 }
 
 function SheetOverlay({
   className,
   ...props
-}: React.ComponentProps<typeof SheetPrimitive.Overlay>) {
+}: preact.ComponentProps<typeof SheetPrimitive.Overlay>) {
   return (
     <SheetPrimitive.Overlay
       data-slot="sheet-overlay"
@@ -47,7 +46,7 @@ function SheetContent({
   children,
   side = "right",
   ...props
-}: React.ComponentProps<typeof SheetPrimitive.Content> & {
+}: preact.ComponentProps<typeof SheetPrimitive.Content> & {
   side?: "top" | "right" | "bottom" | "left"
 }) {
   return (
@@ -79,7 +78,7 @@ function SheetContent({
   )
 }
 
-function SheetHeader({ className, ...props }: React.ComponentProps<"div">) {
+function SheetHeader({ className, ...props }: preact.ComponentProps<"div">) {
   return (
     <div
       data-slot="sheet-header"
@@ -89,7 +88,7 @@ function SheetHeader({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
-function SheetFooter({ className, ...props }: React.ComponentProps<"div">) {
+function SheetFooter({ className, ...props }: preact.ComponentProps<"div">) {
   return (
     <div
       data-slot="sheet-footer"
@@ -102,7 +101,7 @@ function SheetFooter({ className, ...props }: React.ComponentProps<"div">) {
 function SheetTitle({
   className,
   ...props
-}: React.ComponentProps<typeof SheetPrimitive.Title>) {
+}: preact.ComponentProps<typeof SheetPrimitive.Title>) {
   return (
     <SheetPrimitive.Title
       data-slot="sheet-title"
@@ -115,7 +114,7 @@ function SheetTitle({
 function SheetDescription({
   className,
   ...props
-}: React.ComponentProps<typeof SheetPrimitive.Description>) {
+}: preact.ComponentProps<typeof SheetPrimitive.Description>) {
   return (
     <SheetPrimitive.Description
       data-slot="sheet-description"

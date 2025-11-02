@@ -1,4 +1,3 @@
-import React from "preact/compat"
 import { Label as LabelPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils.ts"
@@ -6,7 +5,7 @@ import { cn } from "@/lib/utils.ts"
 function Label({
   className,
   ...props
-}: React.ComponentProps<typeof LabelPrimitive.Root>) {
+}: preact.ComponentProps<typeof LabelPrimitive.Root>) {
   return (
     <LabelPrimitive.Root
       data-slot="label"

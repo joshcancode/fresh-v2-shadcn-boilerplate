@@ -1,4 +1,3 @@
-import React from "preact/compat"
 import { Checkbox as CheckboxPrimitive } from "radix-ui"
 import { CheckIcon } from "lucide-preact"
 
@@ -7,7 +6,7 @@ import { cn } from "@/lib/utils.ts"
 function Checkbox({
   className,
   ...props
-}: React.ComponentProps<typeof CheckboxPrimitive.Root>) {
+}: preact.ComponentProps<typeof CheckboxPrimitive.Root>) {
   return (
     <CheckboxPrimitive.Root
       data-slot="checkbox"

@@ -1,5 +1,4 @@
-import React from "preact/compat"
-import {Progress as ProgressPrimitive } from "radix-ui"
+import { Progress as ProgressPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils.ts"
 
@@ -7,7 +6,7 @@ function Progress({
   className,
   value,
   ...props
-}: React.ComponentProps<typeof ProgressPrimitive.Root>) {
+}: preact.ComponentProps<typeof ProgressPrimitive.Root>) {
   return (
     <ProgressPrimitive.Root
       data-slot="progress"

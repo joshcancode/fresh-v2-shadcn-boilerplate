@@ -1,4 +1,3 @@
-import React from "preact/compat"
 import { Switch as SwitchPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils.ts"
@@ -6,7 +5,7 @@ import { cn } from "@/lib/utils.ts"
 function Switch({
   className,
   ...props
-}: React.ComponentProps<typeof SwitchPrimitive.Root>) {
+}: preact.ComponentProps<typeof SwitchPrimitive.Root>) {
   return (
     <SwitchPrimitive.Root
       data-slot="switch"

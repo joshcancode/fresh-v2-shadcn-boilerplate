@@ -1,4 +1,3 @@
-import React from "preact/compat"
 import { Slot } from "radix-ui"
 import { cva, type VariantProps } from "class-variance-authority"
 
@@ -30,7 +29,7 @@ function Badge({
   variant,
   asChild = false,
   ...props
-}: React.ComponentProps<"span"> &
+}: preact.ComponentProps<"span"> &
   VariantProps<typeof badgeVariants> & { asChild?: boolean }) {
   const Comp = asChild ? Slot.Slot : "span"
 

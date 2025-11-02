@@ -1,4 +1,3 @@
-import React from "preact/compat"
 import { RadioGroup as RadioGroupPrimitive } from "radix-ui"
 import { CircleIcon } from "lucide-preact"
 
@@ -7,7 +6,7 @@ import { cn } from "@/lib/utils.ts"
 function RadioGroup({
   className,
   ...props
-}: React.ComponentProps<typeof RadioGroupPrimitive.Root>) {
+}: preact.ComponentProps<typeof RadioGroupPrimitive.Root>) {
   return (
     <RadioGroupPrimitive.Root
       data-slot="radio-group"
@@ -20,7 +19,7 @@ function RadioGroup({
 function RadioGroupItem({
   className,
   ...props
-}: React.ComponentProps<typeof RadioGroupPrimitive.Item>) {
+}: preact.ComponentProps<typeof RadioGroupPrimitive.Item>) {
   return (
     <RadioGroupPrimitive.Item
       data-slot="radio-group-item"

@@ -1,8 +1,6 @@
-import React from "preact/compat"
-
 import { cn } from "@/lib/utils.ts"
 
-function Input({ className, type, ...props }: React.ComponentProps<"input">) {
+function Input({ className, type, ...props }: preact.ComponentProps<"input">) {
   return (
     <input
       type={type}

@@ -1,4 +1,3 @@
-import React from "preact/compat"
 import { Slot } from "radix-ui"
 import { cva, type VariantProps } from "class-variance-authority"
 
@@ -41,7 +40,7 @@ function Button({
   size,
   asChild = false,
   ...props
-}: React.ComponentProps<"button"> &
+}: preact.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
   }) {
