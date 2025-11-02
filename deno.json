@@ -20,21 +20,21 @@
   ],
   "imports": {
     "@/": "./",
-    "fresh": "jsr:@fresh/core@^2.0.0-beta.4",
-    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^0.9.13",
-    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.13",
+    "fresh": "jsr:@fresh/core@^2.1.4",
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.7",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.12",
     "class-variance-authority": "npm:class-variance-authority@^0.7.1",
     "clsx": "npm:clsx@^2.1.1",
     "cmdk": "npm:cmdk@^1.1.1",
-    "lucide-preact": "npm:lucide-preact@^0.539.0",
-    "preact": "npm:preact@^10.27.1",
-    "@preact/signals": "npm:@preact/signals@^2.3.1",
+    "lucide-preact": "npm:lucide-preact@^0.552.0",
+    "preact": "npm:preact@^10.27.2",
+    "@preact/signals": "npm:@preact/signals@^2.3.2",
     "radix-ui": "npm:radix-ui@^1.4.3",
     "sonner": "npm:sonner@^2.0.7",
     "tailwind-merge": "npm:tailwind-merge@^3.3.1",
     "tailwindcss": "npm:tailwindcss@^4.1.10",
     "tw-animate-css": "npm:tw-animate-css@^1.3.7",
-    "vite": "npm:vite@^7.1.4"
+    "vite": "npm:vite@^7.1.3"
   },
   "compilerOptions": {
     "lib": [
