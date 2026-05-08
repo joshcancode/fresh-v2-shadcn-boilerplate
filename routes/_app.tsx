@@ -1,4 +1,4 @@
-import { define } from "@/utils.ts";
+import { define } from "@/utils.ts"
 
 export default define.page(function App({ Component }) {
   return (
@@ -6,9 +6,9 @@ export default define.page(function App({ Component }) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>fresh-project</title>
+        <title>fresh-v2-shadcn-boilerplate</title>
       </head>
-      <body className="dark">
+      <body>
         <Component />
       </body>
     </html>

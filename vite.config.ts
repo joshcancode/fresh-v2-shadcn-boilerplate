@@ -4,9 +4,4 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [fresh(), tailwindcss()],
-  resolve: {
-    alias: {
-      "@": Deno.cwd(),
-    },
-  },
 });

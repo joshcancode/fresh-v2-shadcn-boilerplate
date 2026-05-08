@@ -1,9 +1,9 @@
 import {
-  CircleCheckIcon, 
-  InfoIcon, 
-  Loader2Icon, 
-  OctagonXIcon, 
-  TriangleAlertIcon
+  CircleCheckIcon,
+  InfoIcon,
+  Loader2Icon,
+  OctagonXIcon,
+  TriangleAlertIcon,
 } from "lucide-preact"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
 
@@ -27,6 +27,11 @@ const Toaster = ({ ...props }: ToasterProps) => {
           "--border-radius": "var(--radius)",
         } as preact.CSSProperties
       }
+      toastOptions={{
+        classNames: {
+          toast: "cn-toast",
+        },
+      }}
       {...props}
     />
   )

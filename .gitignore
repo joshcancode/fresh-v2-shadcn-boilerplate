@@ -10,6 +10,3 @@ _fresh/
 # npm + other dependencies
 node_modules/
 vendor/
-
-# deno runtime lock
-deno.lock
