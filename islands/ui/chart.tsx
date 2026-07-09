@@ -2,6 +2,7 @@ import { createContext } from "preact"
 import * as React from "preact/compat"
 import { useContext, useId, useMemo } from "preact/hooks"
 import * as RechartsPrimitive from "recharts"
+import { type TooltipValueType } from "recharts";
 
 import { cn } from "@/lib/utils.ts"
 
@@ -116,7 +117,6 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
-// TO-DO: Properly allow passing of custom fill color
 function ChartTooltipContent({
   active,
   payload,
@@ -136,12 +136,12 @@ function ChartTooltipContent({
     hideLabel?: boolean
     hideIndicator?: boolean
     indicator?: "line" | "dot" | "dashed"
-    nameKey?: string
-    labelKey?: string,
     color?: string
+    nameKey?: string
+    labelKey?: string
   } & Omit<
     RechartsPrimitive.DefaultTooltipContentProps<
-      RechartsPrimitive.TooltipValueType,
+      TooltipValueType,
       TooltipNameType
     >,
     "accessibilityLayer"

@@ -68,12 +68,13 @@ function PaginationLink({
 function PaginationPrevious({
   className,
   text = "Previous",
+  size,
   ...props
 }: preact.ComponentProps<typeof PaginationLink> & { text?: string }) {
   return (
     <PaginationLink
       aria-label="Go to previous page"
-      size="default"
+      size={size ?? "default"}
       className={cn("pl-1.5!", className)}
       {...props}
     >
@@ -86,12 +87,13 @@ function PaginationPrevious({
 function PaginationNext({
   className,
   text = "Next",
+  size,
   ...props
 }: preact.ComponentProps<typeof PaginationLink> & { text?: string }) {
   return (
     <PaginationLink
       aria-label="Go to next page"
-      size="default"
+      size={size ?? "default"}
       className={cn("pr-1.5!", className)}
       {...props}
     >
