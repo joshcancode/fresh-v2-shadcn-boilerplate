@@ -1,4 +1,5 @@
 import { useRef } from "preact/hooks"
+import { forwardRef } from "preact/compat"
 import { Combobox as ComboboxPrimitive } from "@base-ui/react"
 import { CheckIcon, ChevronDownIcon, XIcon } from "lucide-preact"
 
@@ -17,22 +18,20 @@ function ComboboxValue({ ...props }: ComboboxPrimitive.Value.Props) {
   return <ComboboxPrimitive.Value data-slot="combobox-value" {...props} />
 }
 
-function ComboboxTrigger({
-  className,
-  children,
-  ...props
-}: ComboboxPrimitive.Trigger.Props) {
-  return (
-    <ComboboxPrimitive.Trigger
-      data-slot="combobox-trigger"
-      className={cn("[&_svg:not([class*='size-'])]:size-4", className)}
-      {...props}
-    >
-      {children}
-      <ChevronDownIcon className="pointer-events-none size-4 text-muted-foreground" />
-    </ComboboxPrimitive.Trigger>
-  )
-}
+const ComboboxTrigger = forwardRef<
+  HTMLButtonElement,
+  ComboboxPrimitive.Trigger.Props
+>(({ className, children, ...props }, ref) => (
+  <ComboboxPrimitive.Trigger
+    ref={ref}
+    data-slot="combobox-trigger"
+    className={cn("[&_svg:not([class*='size-'])]:size-4", className)}
+    {...props}
+  >
+    {children}
+    <ChevronDownIcon className="pointer-events-none size-4 text-muted-foreground" />
+  </ComboboxPrimitive.Trigger>
+))
 
 function ComboboxClear({ className, ...props }: ComboboxPrimitive.Clear.Props) {
   return (
@@ -197,22 +196,20 @@ function ComboboxSeparator({
   )
 }
 
-function ComboboxChips({
-  className,
-  ...props
-}: React.ComponentPropsWithRef<typeof ComboboxPrimitive.Chips> &
-  ComboboxPrimitive.Chips.Props) {
-  return (
-    <ComboboxPrimitive.Chips
-      data-slot="combobox-chips"
-      className={cn(
-        "flex min-h-8 flex-wrap items-center gap-1 rounded-lg border border-input bg-transparent bg-clip-padding px-2.5 py-1 text-sm transition-colors focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/50 has-aria-invalid:border-destructive has-aria-invalid:ring-3 has-aria-invalid:ring-destructive/20 has-data-[slot=combobox-chip]:px-1 dark:bg-input/30 dark:has-aria-invalid:border-destructive/50 dark:has-aria-invalid:ring-destructive/40",
-        className
-      )}
-      {...props}
-    />
-  )
-}
+const ComboboxChips = forwardRef<
+  HTMLDivElement,
+  ComboboxPrimitive.Chips.Props
+>(({ className, ...props }, ref) => (
+  <ComboboxPrimitive.Chips
+    ref={ref}
+    data-slot="combobox-chips"
+    className={cn(
+      "flex min-h-8 flex-wrap items-center gap-1 rounded-lg border border-input bg-transparent bg-clip-padding px-2.5 py-1 text-sm transition-colors focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/50 has-aria-invalid:border-destructive has-aria-invalid:ring-3 has-aria-invalid:ring-destructive/20 has-data-[slot=combobox-chip]:px-1 dark:bg-input/30 dark:has-aria-invalid:border-destructive/50 dark:has-aria-invalid:ring-destructive/40",
+      className
+    )}
+    {...props}
+  />
+))
 
 function ComboboxChip({
   className,
