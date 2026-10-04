@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/islands/ui/accordion.tsx"
+} from "@/components/ui/accordion.tsx"
 import { Button } from "@/components/ui/button.tsx"
 import {
   Card,
