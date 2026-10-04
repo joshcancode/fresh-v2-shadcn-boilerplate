@@ -1,6 +1,6 @@
 import { Loader2Icon } from "lucide-preact"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 
 function Spinner({ className, ...props }: preact.ComponentProps<"svg"> & { strokeWidth?: number | string }) {
   return (

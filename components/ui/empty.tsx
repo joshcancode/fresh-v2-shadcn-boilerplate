@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 
 function Empty({ className, ...props }: preact.ComponentProps<"div">) {
   return (

@@ -2,7 +2,7 @@ import { NavigationMenu as NavigationMenuPrimitive } from "@base-ui/react/naviga
 import { cva } from "class-variance-authority"
 import { ChevronDownIcon } from "lucide-preact"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 
 function NavigationMenu({
   align = "start",

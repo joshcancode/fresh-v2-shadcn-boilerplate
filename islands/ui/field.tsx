@@ -1,7 +1,7 @@
 import { useMemo } from "preact/hooks"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 import { Label } from "@/islands/ui/label.tsx"
 import { Separator } from "@/islands/ui/separator.tsx"
 

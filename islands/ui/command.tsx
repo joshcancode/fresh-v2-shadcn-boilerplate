@@ -1,7 +1,7 @@
 import { Command as CommandPrimitive } from "cmdk"
 import { CheckIcon, SearchIcon } from "lucide-preact"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 import {
   Dialog,
   DialogContent,

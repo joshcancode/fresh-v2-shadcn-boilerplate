@@ -6,7 +6,7 @@ import {
 } from "@shadcn/react/message-scroller"
 import { ArrowDownIcon } from "lucide-preact"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 import { Button } from "@/components/ui/button.tsx"
 
 function MessageScrollerProvider(

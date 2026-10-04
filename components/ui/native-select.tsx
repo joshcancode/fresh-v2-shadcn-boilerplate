@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from "lucide-preact"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 
 type NativeSelectProps = Omit<preact.ComponentProps<"select">, "size"> & {
   size?: "sm" | "default"

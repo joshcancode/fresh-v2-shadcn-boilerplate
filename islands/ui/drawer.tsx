@@ -3,7 +3,7 @@ import { useContext, useMemo } from "preact/hooks";
 
 import { Drawer as DrawerPrimitive } from "@base-ui/react/drawer"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 
 type DrawerContextProps = {
   hasSnapPoints: boolean

@@ -3,7 +3,7 @@ import { forwardRef } from "preact/compat"
 import { Combobox as ComboboxPrimitive } from "@base-ui/react"
 import { CheckIcon, ChevronDownIcon, XIcon } from "lucide-preact"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 import { Button } from "@/components/ui/button.tsx"
 import {
   InputGroup,

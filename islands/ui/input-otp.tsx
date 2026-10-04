@@ -2,7 +2,7 @@ import { OTPInput, OTPInputContext, RenderProps } from "input-otp"
 import { MinusIcon } from "lucide-preact"
 import { useContext } from "preact/hooks"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 
 function InputOTP({
   className,

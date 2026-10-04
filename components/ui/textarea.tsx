@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 
 function Textarea({ className, ...props }: preact.ComponentProps<"textarea">) {
   return (

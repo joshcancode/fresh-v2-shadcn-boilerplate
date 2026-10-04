@@ -4,7 +4,7 @@ import {
   MoreHorizontalIcon,
 } from "lucide-preact"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "cn"
 import { Button } from "@/components/ui/button.tsx"
 
 function Pagination({ className, ...props }: preact.ComponentProps<"nav">) {
