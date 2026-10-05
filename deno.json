@@ -31,7 +31,7 @@
     "tailwindcss": "npm:tailwindcss@^4.1.10",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.3.2",
     "@base-ui/react": "npm:@base-ui/react@^1.6.0",
-    "@tanstack/react-table": "npm:@tanstack/react-table@^8.21.3",
+    "@tanstack/react-table": "npm:@tanstack/react-table@9.2.4",
     "class-variance-authority": "npm:class-variance-authority@^0.7.1",
     "cmdk": "npm:cmdk@^1.1.1",
     "cn": "npm:cn@^0.4.0",
