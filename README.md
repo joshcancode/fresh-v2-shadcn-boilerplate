@@ -1,4 +1,4 @@
-[fresh repository](https://github.com/denoland/fresh)
+[fresh repository](https://github.com/freshframework/fresh)
 
 # fresh v2 shadcn boilerplate
 
@@ -7,7 +7,7 @@ A simple boilerplate for Fresh v2 that ships with an up-to-date version of the [
 ## Documentation
 
 Please refer to the proper documentation for each dependency this project uses:
-- [Fresh](https://fresh.deno.dev/docs/introduction)
+- [Fresh](https://usefresh.dev/docs/introduction)
 - [shadcn](https://ui.shadcn.com/docs)
 - [lucide-preact](https://lucide.dev/)
 
